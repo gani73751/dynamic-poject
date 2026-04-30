@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <span class="logo">ShopWave</span>
+            <p>Modern shopping experience</p>
+        </div>
+        <div class="cart-widget">
+            <button class="cart-button" aria-label="View cart">
+                <span>Cart</span>
+                <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero-panel">
+            <div>
+                <h1>Shop the trending products</h1>
+                <p>Fast, simple, and responsive marketplace built with vanilla JavaScript.</p>
+            </div>
+            <span class="hero-tag">Powered by DummyJSON</span>
+        </section>
+
+        <section class="product-section">
+            <div class="section-heading">
+                <h2>Featured Products</h2>
+                <p>Browse top items with instant add-to-cart support.</p>
+            </div>
+            <div id="loader" class="loader">Loading products…</div>
+            <div id="product-grid" class="product-grid"></div>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
